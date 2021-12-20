@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: turquoise;
+}
+
+.head{
+    background-color: white;
+    width: 100%;
+}
+
+.foot{
+    background-color: white;
+    width: 100%;
+}
+
+.ms_select{
+    padding: 2px;
+}
