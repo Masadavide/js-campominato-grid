@@ -20,3 +20,30 @@ body{
 .ms_select{
     padding: 2px;
 }
+
+.container{
+    width: 500px;
+    height: 500px;
+}
+
+.box{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.box1{
+    width: calc(100% / 10);
+    height: 100%;
+}
+
+.box2{
+    width: calc(100% / 9);
+}
+
+.box3{
+    width: calc(100% / 7);
+}
+
+.color{
+    background-color: blue;
+}
