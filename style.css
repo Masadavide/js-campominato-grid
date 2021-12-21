@@ -21,9 +21,10 @@ body{
     padding: 2px;
 }
 
-.container{
+.ms_container{
     width: 500px;
     height: 500px;
+    margin-top: 150px;
 }
 
 .box{
@@ -32,18 +33,20 @@ body{
 }
 
 .box1{
-    width: calc(100% / 10);
-    height: 100%;
+    width: calc(500px / 10);
+    height: calc(500px / 10);
 }
 
 .box2{
-    width: calc(100% / 9);
+    width: calc(500px/ 9);
+    height: calc(500px / 9);
 }
 
 .box3{
-    width: calc(100% / 7);
+    width: calc(500px / 7);
+    height: calc(500px / 7);
 }
 
-.color{
+.safe{
     background-color: blue;
 }

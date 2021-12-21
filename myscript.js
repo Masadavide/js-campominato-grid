@@ -6,24 +6,26 @@ btn.addEventListener("click",function(){
     grid.innerHTML = "";
     if(level == 1){
         for(i = 1; i <= 100; i++){
-            grid.innerHTML += `<div class="box box1">${i}</div>`
+            grid.innerHTML += `<div class="box box1 d-flex justify-content-center align-items-center">${i}</div>`
         }
     }else if(level == 2){
         for(i = 1; i <= 81; i++){
-            grid.innerHTML += `<div class="box box2">${i}</div>`
+            grid.innerHTML += `<div class="box box2 d-flex justify-content-center align-items-center">${i}</div>`
         }
     }else{
         for(i = 1; i <= 49; i++){
-            grid.innerHTML += `<div class="box box3">${i}</div>`
+            grid.innerHTML += `<div class="box box3 d-flex justify-content-center align-items-center">${i}</div>`
         }
     }
 
     let box = document.getElementsByClassName('box')
     for (i = 0; i < box.length; i++)
         box[i].addEventListener("click",function(){
-            let color = "";
-            this.classList.add("color");
+            if (this.classList.contains("safe")){
+                this.classList.remove("safe")
+            }else{
+                this.classList.add("safe")
+                console.log(this.innerHTML);
+            }
     })
 })
-
-
